@@ -1,0 +1,32 @@
+.specialties {
+    &__row {
+        justify-content: space-between;
+    }
+    
+    &__item {
+        border: 1px solid $grey;
+        width: 22.5%;
+        box-sizing: border-box;
+        padding: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5em;
+        color: grey;
+
+        &-header {
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        &-logo {
+            font-size: 2.4em;
+            margin-right: 1rem;
+        }
+
+        &-title {
+            color: $black;
+            font-weight: 600;
+            font-size: 1.2em;
+            justify-self: flex-start;
+        }
+    }
+}

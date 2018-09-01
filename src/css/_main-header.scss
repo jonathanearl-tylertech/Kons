@@ -1,0 +1,17 @@
+.main-header {
+    padding: 5rem 0;
+
+    &__snippit {
+        margin-bottom: 3rem;
+
+        &--highlight {
+            color: $yellow;
+        }
+    }
+
+    &__motto {
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 1;
+    }
+}

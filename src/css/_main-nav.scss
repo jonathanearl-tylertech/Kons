@@ -1,0 +1,39 @@
+.main-nav {
+    background-color: $white;
+
+    &__logo {
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__row {
+        height: 5rem;
+        align-items: center;
+    }
+
+    &__list {
+        margin-left: 4rem;
+
+        &-item {
+            font-size: .8rem;
+            padding: 0 1rem;
+            text-transform: uppercase;
+    
+            &:active {
+                color: $yellow;
+            }
+        }
+    }
+
+    &__quote-button {
+        margin-left: auto;
+        height: 100%;
+        background-color: $yellow;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 0 1rem;
+        border: none;
+    }
+
+}

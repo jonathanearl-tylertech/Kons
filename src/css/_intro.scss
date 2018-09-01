@@ -1,0 +1,42 @@
+.intro {
+    &__img {
+        border: 1.2px solid $grey;
+        padding: 1rem;
+    }
+
+    &__right-col {
+        margin-left: 4.5rem;
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__text {
+        &--bold {
+            color: $black;
+            font-weight: 600;
+        }
+        line-height: 1.75;
+        font-size: 1rem;
+        color: $dark-grey;
+        margin-bottom: 2rem;
+    }
+
+    &__number {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: .5rem;
+    }
+
+    &__description {
+        font-size: .9rem;
+        color: $dark-grey;
+    }
+    &__list {
+        display: flex;
+        &-item {
+            flex-grow: 1;
+        }
+    }
+}

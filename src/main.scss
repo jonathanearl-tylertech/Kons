@@ -1,0 +1,18 @@
+@import './css/colors';
+@import './css/reset';
+@import './css/font';
+@import './css/utilities';
+@import './css/main-nav';
+@import './css/main-header';
+@import './css/intro';
+@import './css/specialties';
+@import './css/projects';
+
+.main-container {
+    padding-top: 5rem;
+    background-color: $white;
+}
+
+.container--padding {
+    background-color: $white;
+}
