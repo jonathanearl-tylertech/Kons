@@ -1,6 +1,7 @@
 .main-nav {
-    position: relative;
-    background-color: $white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 
     &__logo {
         font-weight: 500;
@@ -16,6 +17,7 @@
     &__row {
         height: 5rem;
         align-items: center;
+        background-color: #ffffffcc;
 
         @media (max-width: $small) {
             justify-content: space-between;
