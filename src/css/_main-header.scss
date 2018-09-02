@@ -1,9 +1,16 @@
 .main-header {
     padding: 5rem 0;
 
+    &__container {
+        background-color: $light-blue;
+    }
+
     &__snippit {
         margin-bottom: 3rem;
 
+        @media(max-width: $small) {
+            margin-bottom: 1rem;
+        }
         &--highlight {
             color: $yellow;
         }
@@ -13,5 +20,9 @@
         font-weight: 800;
         font-size: 4rem;
         line-height: 1;
+
+        @media(max-width: $small) {
+            font-size: 2rem;
+        }
     }
 }

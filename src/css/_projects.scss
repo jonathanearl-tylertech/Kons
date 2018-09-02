@@ -1,4 +1,5 @@
 .projects {
+
     &__header {
         align-items: center;
     }
@@ -10,16 +11,62 @@
     &__display {
         height: 50rem;
         overflow: hidden;
+        margin: 0 auto;
+        @media (max-width: $large) {
+            width: 100%;
+        }
+        @media (max-width: $medium-large) {
+            flex-direction: column;
+            height: auto;
+        }
     }
 
     &__img {
+        &-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        height: 100%;
         width:100%;
-        height:100%;
+
         object-fit: cover;
         overflow: hidden;
     }
 
+    &__info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    &__type {
+        color: $grey;
+        font-size: 1.5rem;
+    }
+
+    &__building-name {
+        color: $white;
+        font-size: 2.5rem;
+    }
+
     &__col {
         width: 50%;
+        @media (max-width: $medium-large) {
+            width: 100%;
+            height: 25rem;
+        }
+    }
+
+    &__row {
+        &--bottom {
+            height: 50%;
+            
+        }
+        &--top {
+            height: 50%;
+        }
     }
 }

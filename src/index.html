@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="main-nav">
-        <div class="main-nav__row container row">
+        <div class="main-nav__row container--padding row">
             <div class="main-nav__logo">
                 Kons
             </div>
@@ -25,20 +25,20 @@
     </nav>
 
     <header class="main-header">
-        <div class="container col">
+        <div class="main-header__container container--padding col">
             <p class="main-header__snippit">We're <span class='main-header__snippit--highlight'>Kons</span>, Construction and<br>Development</p>
             <h1 class="main-header__motto">Perfection is<br>always<br>under construction</h1>
         </div>
     </header>
 
     <main>
-        <div class="main-container container--padding">
+        <div class="main-container main-container--first container--padding">
             <section class="intro">
                 <div class="intro__container  row">
-                    <img src="http://placekitten.com/400/600" alt="" class="intro__img">
+                    <img src="/assets/img/main-header.jpg" alt="" class="intro__img">
                     <div class="intro__right-col col">
                         <h2 class="intro__title title">
-                            Introduce about<br>Kons
+                            Introduction to<br>Kons
                         </h2>
                         <p class="intro__text intro__text--bold">
                             Founded in Lebanon in 1967, Kons Construction Company (KCC) has grown to become one of the Middle East's leading construction contractors.
@@ -146,27 +146,135 @@
                 </div>
             </section>
         </div>
-        <div class="projects__display row">
-            <div class="projects__col projects__col--left col">
-                <img src="http://placekitten.com/600/600" alt="" class="projects__img">
-            </div>
-            <div class="projects__col projects--col-right col">
-                <div class="projects__row projects__row-top row">
-                    <img src="http://placekitten.com/300/300" alt="" class="projects__img">
+        <div class="projects__display row container">
+
+                <div class="projects__col projects__col--left col">
+                    <div class="projects__img-container">
+                        <img src="/assets/img/project1.jpg" alt="" class="projects__img">
+                        <div class="projects__info">
+                            <div class="projects__type">Buildings</div>
+                            <div class="projects__building-name">Chateau Del Mar</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects__row projects__row-bottom row">
-                    <img src="http://placekitten.com/200/200" alt="" class="projects__img">
-                    <img src="http://placekitten.com/200/200" alt="" class="projects__img">
+                <div class="projects__col projects--col-right col">
+                    <div class="projects__row projects__row--top row">
+                        <div class="projects__img-container">
+                            <img src="/assets/img/project2.jpg" alt="" class="projects__img">
+                            <div class="projects__info">
+                                <div class="projects__type">Commericals</div>
+                                <div class="projects__building-name">Library of Washington</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__row projects__row--bottom row">
+                        <div class="projects__img-container">
+                            <img src="/assets/img/project3.jpg" alt="" class="projects__img">
+                            <div class="projects__info">
+                                <div class="projects__type">Buildings</div>
+                                <div class="projects__building-name">SAM</div>
+                            </div>
+                        </div>
+                        <div class="projects__img-container">
+                            <img src="/assets/img/project4.jpg" alt="" class="projects__img">
+                            <div class="projects__info">
+                                <div class="projects__type">Residentials</div>
+                                <div class="projects__building-name">Reif<span class="no-small"> Apartments</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-       
-        
-                
+        <div class="main-container main-container--bottom container--padding row">
+            <section class="review">
+                <div class="review__col col">
+                    <div class="review__title title title--reverse">
+                        Trust from Our<br>Clients
+                    </div>
+                    <div class="review__rating">
+                        9.5
+                    </div>
+                    <div class="review__visual row">
+                        <div class="review__visual-square">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review__visual-square">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review__visual-square">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review__visual-square">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review__visual-square">
+                                <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="review__link">see review here</a>
+                    <img class="review__trust-logo" src="#" alt="trustpilot">
+                    <div class="review__user-review">
+                        Excellent Service,<br>beautiful work!<br>Until next time!<br> Thank you
+                    </div>
+                    <div class="review__user-name">
+                        - Paul Murren
+                    </div>
+                </div>
+            </section>
 
+            <div class="seperator--vertical no-small"></div>
 
-            
+            <section class="news col">
+                <article class="news__main container--padding-border col">
+                    <img src="/assets/img/news.jpg" alt="" class="news__img">
+                    <div class="news__info row">
+                        <div class="news__time">20 hours ago</div>
+                        <div class="news__spacer">-</div>
+                        <div class="news__writer">Admin</div>
+                    </div>
+                    <h3 class="news__title">Discover the amazing inside deco a carte museum in slovakia</h3>
+                    <button class="news__link button">full article ></button>
+                </article>
+
+                <div class="news__secondary row">
+                    <article class="news__article container--padding-border col">
+                        <div class="news__info row">
+                            <div class="news__time">Aug 24th, 2017</div>
+                            <div class="news__spacer">-</div>
+                            <div class="news__writer">Paul Logan</div>
+                        </div>
+                        <h3 class="news__title">Top 10 architecture buildings unique in china</h3>
+                        <button class="news__link button">full article ></button>
+                    </article>
+                    <article class="news__article container--padding-border col">
+                        <div class="news__info row">
+                            <div class="news__time">Aug 20th, 2017</div>
+                            <div class="news__spacer">-</div>
+                            <div class="news__writer">Sam Smith</div>
+                        </div>
+                        <h3 class="news__title">Morroco shopping center by Kons co.</h3>
+                        <button class="news__link button">full article ></button>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <section class="contact">
+            <div class="contact__message">Let's work together</div>
+            <div class="contact__phone">(+555) 042-1995</div>
+            <div class="contact__address">1401 S 348th St M101, Federal Way, WA 98003</div>
+            <div class="contact__email">contact@superreboot.com</div>
         </section>
+        <footer class="main-footer row">
+            <div class="logo">Kons</div>
+            <div class="main-footer__copywrite">&copy;2018 Kons. All rights reserved</div>
+            <div class="main-footer__social-list row">
+                <div>Face</div>
+                <div>Twit</div>
+                <div>G+</div>
+                <div>Share</div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>

@@ -1,0 +1,42 @@
+.news {
+    flex-grow: 1;
+    
+    &__main {
+        margin-bottom: 3rem;
+    }
+
+    &__img {
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__info {
+        margin-bottom: 1rem;
+        color: $dark-grey;
+
+    }
+    &__spacer {
+        padding: 0 .5rem;
+    }
+    
+    &__title {
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__secondary {
+        border-left: 4px solid $yellow;
+    }
+
+    &__link {
+        margin-top: auto;
+    }
+
+    &__secondary {
+        flex-direction: column;
+    }
+}
