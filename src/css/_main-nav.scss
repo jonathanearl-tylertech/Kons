@@ -1,7 +1,8 @@
 .main-nav {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
+    background-color: #ffffffaa;
 
     &__logo {
         font-weight: 500;
@@ -17,7 +18,7 @@
     &__row {
         height: 5rem;
         align-items: center;
-        background-color: #ffffffcc;
+        background-color: inherit;
 
         @media (max-width: $small) {
             justify-content: space-between;
@@ -75,10 +76,12 @@
 }
 
 .mobile-nav {
+    z-index: 1;
     display: none;
     background-color: #333333dd;
     padding: 3rem 0;
-    position: absolute;
+    top: 5rem;
+    position: fixed;
     width: 100vw;
 
     &__list {
