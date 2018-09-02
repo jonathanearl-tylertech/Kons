@@ -1,4 +1,4 @@
-function openMobileNav() {
+function toggleMobileNav() {
     let navList = document.querySelector('.mobile-nav')
     let isHidden = navList.style.display === ""
     if(isHidden) {
@@ -6,9 +6,13 @@ function openMobileNav() {
     } else {
         navList.style.display = ""
     }
-    console.log('hello')
-    console.log(navList)
-    console.log(navList.style)
 }
 
-module.exports = openMobileNav
+function closeMobileNav() {
+    console.log('closemobile')
+    let navList = document.querySelector('.mobile-nav')
+    navList.style.display = ""
+    return true;
+}
+
+module.exports = { toggleMobileNav, closeMobileNav }
