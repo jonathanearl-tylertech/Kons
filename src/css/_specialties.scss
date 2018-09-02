@@ -1,6 +1,10 @@
 .specialties {
     &__row {
         justify-content: space-between;
+        @media (max-width: $medium-large) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     
     &__item {
@@ -11,6 +15,14 @@
         font-size: 1rem;
         line-height: 1.5em;
         color: grey;
+
+        @media (max-width: $medium-large) {
+            width: 45%;
+            border: none;
+        }
+        @media(max-width: $small) {
+            width: 90%;
+        }
 
         &-header {
             align-items: center;
@@ -25,8 +37,13 @@
         &-title {
             color: $black;
             font-weight: 600;
-            font-size: 1.2em;
+            font-size: 1em;
             justify-self: flex-start;
+        }
+    }
+    &__title {
+        @media (max-width: $medium-large) {
+            margin-bottom: 2rem;
         }
     }
 }

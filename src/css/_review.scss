@@ -1,0 +1,55 @@
+.review {
+    width: 30%;
+    @media (max-width: $small) {
+        width: 100%;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 3.5rem;
+        text-align: end;
+    }
+
+    &__col {
+        align-items: flex-end;
+    }
+
+    &__rating {
+        font-size: 4.5em;
+        font-weight: 100;
+    }
+
+    &__visual {
+        margin: 1rem 0;
+        color: $white;
+        font-size: 1em;
+        &-square {
+            margin-left: .3rem;
+            padding: .5rem;
+            background-color: $green;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $dark-grey;
+        margin-bottom: .5em;
+    }
+
+    &__trust-logo {
+        margin-bottom: 3.5rem;
+    }
+
+    &__user-review {
+        font-size: 2rem;
+        font-family: serif;
+        text-align: end;
+        margin-bottom: 1rem;
+    }
+    
+    &__user-name {
+        color: $grey;
+    }
+
+    padding-bottom:  3rem;
+}
