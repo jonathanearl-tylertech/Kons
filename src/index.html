@@ -10,22 +10,29 @@
 <body>
     <nav class="main-nav">
         <div class="main-nav__row container--padding row">
-            <div class="main-nav__logo">
-                Kons
+            <div class="main-nav__logo row">
+                <img class="logo" src="/assets/img/logo.svg" alt="logo"> Kons
             </div>
             <ul class="main-nav__list row">
-                <li class="main-nav__list-item">home</li>
+                <li class="main-nav__list-item"><a href="#about" class="main-nav__link">about</a></li>
                 <li class="main-nav__list-item">works</li>
                 <li class="main-nav__list-item">news</li>
-                <li class="main-nav__list-item">about</li>
                 <li class="main-nav__list-item">contact</li>
             </ul>
-            <div class="main-nav__mobile">
+            <div class="main-nav__mobile main-nav__mobile-button">
                 Menu
-                <i class="main-nav__mobile-button fas fa-caret-square-down"></i>
+                <i class="main-nav__mobile-icon fas fa-caret-square-down"></i>
             </div>
             <button class="main-nav__quote-button"><span class="hidden--small">get a<br></span>quote</button>
         </div>
+    </nav>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__list col">
+            <li class="mobile-nav__list-item">about</li>
+            <li class="mobile-nav__list-item">works</li>
+            <li class="mobile-nav__list-item">news</li>
+            <li class="mobile-nav__list-item">contact</li>
+        </ul>
     </nav>
 
     <header class="main-header">

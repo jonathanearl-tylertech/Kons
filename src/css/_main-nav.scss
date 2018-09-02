@@ -1,10 +1,16 @@
 .main-nav {
+    position: relative;
     background-color: $white;
 
     &__logo {
         font-weight: 500;
         font-size: 1.6rem;
         text-transform: uppercase;
+        align-items: center;
+        margin-left: -7rem;
+        @media (max-width: $medium-large) {
+            margin-left: -3rem;
+        }
     }
 
     &__row {
@@ -32,16 +38,21 @@
         }
     }
 
+    &__link:active {
+        color: $yellow;
+    }
+
     &__mobile {
         display: none;
         font-size: 1.6rem;
+        font-weight: 100;
         text-transform: uppercase;
         
         @media (max-width: $small) {
             display: block;
         }
     }
-    &__mobile-button {
+    &__mobile-icon {
         color: $yellow;
     }
 
@@ -59,4 +70,39 @@
         }
     }
 
+}
+
+.mobile-nav {
+    display: none;
+    background-color: #333333dd;
+    padding: 3rem 0;
+    position: absolute;
+    width: 100vw;
+
+    
+
+    &__list {
+        width: 100%;
+        align-items: center;
+
+        &-item {
+            box-sizing: border-box;
+            width: 90vw;
+            text-align: center;
+            border-left: 4px solid $yellow;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            padding: .5rem;
+            margin-bottom: 1em;
+            color: #fffa;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                color: #ffff;
+            }
+        }
+    }
 }
