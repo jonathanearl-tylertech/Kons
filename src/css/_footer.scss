@@ -1,0 +1,43 @@
+.main-footer {
+    background-color: $white;
+
+    &__container {
+        position: relative;
+        height: 5rem;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $small) {
+            width: 100%;
+            flex-direction: column;
+            height: 20rem;
+            justify-content: space-around;
+        }
+    }
+
+    &__logo {
+        text-transform: capitalize;
+    }
+
+    &__copywrite {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @media (max-width: small) {
+            position: static;
+            width: 100%;
+            color: pink;
+        }
+    }
+
+    &__social-list {
+        font-size: 2rem;
+    }
+
+    &__social-item {
+        margin-left: 1rem;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
