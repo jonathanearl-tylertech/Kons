@@ -84,7 +84,7 @@
     }
 }
 
-.no-small {
+.hidden--small {
     @media(max-width: $small) {
         display: none;
     }

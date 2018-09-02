@@ -10,6 +10,10 @@
     &__row {
         height: 5rem;
         align-items: center;
+
+        @media (max-width: $small) {
+            justify-content: space-between;
+        }
     }
 
     &__list {
@@ -28,6 +32,19 @@
         }
     }
 
+    &__mobile {
+        display: none;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        
+        @media (max-width: $small) {
+            display: block;
+        }
+    }
+    &__mobile-button {
+        color: $yellow;
+    }
+
     &__quote-button {
         margin-left: auto;
         height: 100%;
@@ -36,6 +53,10 @@
         font-weight: 800;
         padding: 0 1rem;
         border: none;
+
+        @media (max-width: $small) {
+            margin-left: 0;
+        }
     }
 
 }
