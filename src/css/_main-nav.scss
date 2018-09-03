@@ -10,6 +10,9 @@
         text-transform: uppercase;
         align-items: center;
         margin-left: -7rem;
+        @media (max-width: $large) {
+            margin-left: -2rem;
+        }
         @media (max-width: $medium-large) {
             margin-left: -3rem;
         }
