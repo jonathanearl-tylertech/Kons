@@ -39,4 +39,8 @@
     &__secondary {
         flex-direction: column;
     }
+
+    &__article {
+        border-left: none;
+    }
 }

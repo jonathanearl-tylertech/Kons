@@ -1,6 +1,7 @@
 .container {
     width: 80%;
     box-sizing: border-box;
+    max-width: $container-width;
 
     &--padding {
         margin: 0 auto;
@@ -70,6 +71,7 @@
 }
 
 .main-container {
+    max-width: $container-width;
     padding-top: 5rem;
     padding-bottom: 5rem;
 
