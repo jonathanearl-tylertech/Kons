@@ -72,7 +72,7 @@
 .main-container {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: $white;
+
     &--first {
         padding-bottom: 0;
     }
@@ -84,8 +84,13 @@
     }
 }
 
-.no-small {
+.hidden--small {
     @media(max-width: $small) {
         display: none;
     }
+}
+
+.logo {
+    height: 7.5rem;
+    width: 7.5rem;
 }

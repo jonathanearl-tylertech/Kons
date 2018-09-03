@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kons</title>
+    <title>Kons - World class construction</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <nav class="main-nav">
         <div class="main-nav__row container--padding row">
-            <div class="main-nav__logo">
-                Kons
+            <div class="main-nav__logo row">
+                <img class="logo" src="/assets/img/logo.svg" alt="logo"><span class="hidden--small">Kons</span>
             </div>
             <ul class="main-nav__list row">
-                <li class="main-nav__list-item">home</li>
-                <li class="main-nav__list-item">works</li>
-                <li class="main-nav__list-item">news</li>
-                <li class="main-nav__list-item">about</li>
-                <li class="main-nav__list-item">contact</li>
+                <li class="main-nav__list-item"><a href="#about" class="main-nav__link main-nav__link--active">about</a></li>
+                <li class="main-nav__list-item"><a href="#works" class="main-nav__link">works</a></li>
+                <li class="main-nav__list-item"><a href="#news" class="main-nav__link">news</a></li>
+                <li class="main-nav__list-item"><a href="#contact" class="main-nav__link">contact</a></li>
             </ul>
-            <button class="main-nav__quote-button">get a<br>quote</button>
+            <div class="main-nav__mobile main-nav__mobile-button">
+                Menu
+                <i class="main-nav__mobile-icon fas fa-caret-square-down"></i>
+            </div>
+            <button class="main-nav__quote-button"><span class="hidden--small">get a<br></span>quote</button>
         </div>
+    </nav>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__list col">
+            <li ><a class="mobile-nav__link" href="#about" alt="about">about</a></li>
+            <li ><a class="mobile-nav__link" href="#works" alt="works">works</a></li>
+            <li ><a class="mobile-nav__link" href="#news" alt="news">news</a></li>
+            <li ><a class="mobile-nav__link" href="#contact" alt="contact">contact</a></li>
+        </ul>
     </nav>
 
     <header class="main-header">
@@ -32,6 +43,7 @@
     </header>
 
     <main>
+        <span id="about"></span>
         <div class="main-container main-container--first container--padding">
             <section class="intro">
                 <div class="intro__container  row">
@@ -146,6 +158,7 @@
                 </div>
             </section>
         </div>
+        <span id="works"></span>
         <div class="projects__display row container">
             <div class="projects__col projects__col--left col">
                 <div class="projects__img-container">
@@ -178,7 +191,7 @@
                         <img src="/assets/img/project4.jpg" alt="" class="projects__img">
                         <div class="projects__info">
                             <div class="projects__type">Residentials</div>
-                            <div class="projects__building-name">Reif<span class="no-small"> Apartments</span></div>
+                            <div class="projects__building-name">Reif<span class="hidden--small"> Apartments</span></div>
                         </div>
                     </div>
                 </div>
@@ -225,7 +238,7 @@
         </section>
 
         <div class="seperator--vertical no-small"></div>
-
+        <span id="news"></span>
         <section class="news col">
             <article class="news__main container--padding-border col">
                 <img src="/assets/img/news.jpg" alt="" class="news__img">
@@ -260,7 +273,7 @@
             </div>
         </section>
     </div>
-
+    <span id="contact"></span>
     <section class="contact col">
         <div class="contact__message">Let's work together</div>
         <div class="contact__phone">(+555) 042-1995</div>
