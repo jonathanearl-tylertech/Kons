@@ -1,4 +1,3 @@
-import './index.html'
 import './main.scss'
 
 import { toggleMobileNav, closeMobileNav } from './js/mobile-nav'

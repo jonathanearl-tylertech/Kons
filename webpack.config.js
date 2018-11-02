@@ -43,7 +43,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             minify: {
-                html5                          : true,
+                html5                          : false,
                 collapseWhitespace             : false,
                 minifyCSS                      : false,
                 minifyJS                       : false,
@@ -71,8 +71,7 @@ module.exports = {
     ],
     optimization: {
         minimizer: [
-            new OptimizeCSSAssetsPlugin({}),
-            new UglifyJsPlugin()
+
         ]
     }
 }
