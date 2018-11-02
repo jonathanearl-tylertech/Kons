@@ -12,7 +12,8 @@
     <nav class="main-nav">
         <div class="main-nav__row container container--padding row">
             <div class="main-nav__logo row">
-                <a href="/" alt="home"><img class="logo" src="/assets/img/logo.svg" alt="logo"></a><span class="hidden--small">Kons</span>
+                <a href="/" alt="home"><img class="logo" src="/assets/img/logo.svg" alt="logo"></a>
+                <a href="/" alt="home"><span class="logo_name hidden--small">Kons</span></a>
             </div>
             <ul class="main-nav__list row">
                 <li class="main-nav__list-item"><a href="#about" class="main-nav__link main-nav__link--active">about</a></li>
@@ -64,7 +65,7 @@
                             We have exacting HSE and sustanability standards and the health and safty of both our employees and the general public is given utmost priority.
                         </p>               
 
-                        <button class="intro__button button">Read More</button>
+                        <a href="/info" alt="about us" class="intro__button button">Read More</a>
                         
                         <hr class="intro__seperator seperator">
 
@@ -155,7 +156,7 @@
             <section class="projects">
                 <div class="projects__header row">
                     <h2 class="projects__title title">Projects That We<br>Completed</h2>
-                    <button class="projects__button button">view all projects</button>
+                    <a href="/info" alt="All Projects" class="projects__button button">view all projects</a>
                 </div>
             </section>
         </div>
@@ -164,9 +165,11 @@
             <div class="projects__col projects__col--left col">
                 <div class="projects__img-container">
                     <img src="/assets/img/project1.jpg" alt="" class="projects__img">
-                    <div class="projects__info">
-                        <div class="projects__type">Buildings</div>
-                        <div class="projects__building-name">Chateau Del Mar</div>
+                    <div class="projects__info-container">
+                        <div class="projects__info">
+                            <div class="projects__type">Buildings</div>
+                            <a href="/info" alt="Chateau Del Mar project details" class="projects__building-name">Chateau Del Mar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,25 +177,31 @@
                 <div class="projects__row projects__row--top row">
                     <div class="projects__img-container">
                         <img src="/assets/img/project2.jpg" alt="" class="projects__img">
-                        <div class="projects__info">
-                            <div class="projects__type">Commericals</div>
-                            <div class="projects__building-name">Library of Washington</div>
+                        <div class="projects__info-container">
+                            <div class="projects__info">
+                                <div class="projects__type">Commericals</div>
+                                <div href="/info" alt="Library of Washington project details" class="projects__building-name">Library of Washington</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="projects__row projects__row--bottom row">
                     <div class="projects__img-container">
                         <img src="/assets/img/project3.jpg" alt="" class="projects__img">
-                        <div class="projects__info">
-                            <div class="projects__type">Buildings</div>
-                            <div class="projects__building-name">SAM</div>
+                        <div class="projects__info-container">
+                            <div class="projects__info">
+                                <div class="projects__type">Buildings</div>
+                                <a href="/info" class="projects__building-name" alt="SAM project details">SAM</a>
+                            </div>
                         </div>
                     </div>
                     <div class="projects__img-container">
                         <img src="/assets/img/project4.jpg" alt="" class="projects__img">
-                        <div class="projects__info">
-                            <div class="projects__type">Residentials</div>
-                            <div class="projects__building-name">Reif<span class="hidden--small"> Apartments</span></div>
+                        <div class="projects__info-container">
+                            <div class="projects__info">
+                                <div class="projects__type">Residentials</div>
+                                <a href="/info" class="projects__building-name" alt="Reif Apartment project details">Reif<span class="hidden--small"> Apt</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,7 +237,7 @@
                     </div>
                 </div>
                 <a href="#" class="review__link">see review here</a>
-                <img class="review__trust-logo" src="#" alt="trustpilot">
+                <img class="review__trust-logo" src="/assets/img/trustpilot.jpg" alt="trustpilot">
                 <div class="review__user-review">
                     Excellent Service,<br>beautiful work!<br>Until next time!<br> Thank you
                 </div>
@@ -249,7 +258,7 @@
                     <div class="news__writer">Admin</div>
                 </div>
                 <h3 class="news__title">Discover the amazing inside deco a carte museum in slovakia</h3>
-                <button class="news__link button">full article ></button>
+                <a href="/info" alt="Deco inside a carte museum.. full article" class="news__link button">full article ></a>
             </article>
 
             <div class="news__secondary row">
@@ -260,7 +269,7 @@
                         <div class="news__writer">Paul Logan</div>
                     </div>
                     <h3 class="news__title">Top 10 architecture buildings unique in china</h3>
-                    <button class="news__link button">full article ></button>
+                    <a href="/info" alt="Top 10 architecture buildings in china full article" class="news__link button">full article ></a>
                 </article>
                 <article class="news__article container--padding-border col">
                     <div class="news__info row">
@@ -269,7 +278,7 @@
                         <div class="news__writer">Sam Smith</div>
                     </div>
                     <h3 class="news__title">Morroco shopping center by Kons co.</h3>
-                    <button class="news__link button">full article ></button>
+                    <a href="/info" alt="Morroco shopping center by Kons full article" class="news__link button">full article ></a>
                 </article>
             </div>
         </section>
@@ -290,10 +299,10 @@
             </div>
             <div class="main-footer__copywrite">&copy;2018 Kons. All rights reserved</div>
             <div class="main-footer__social-list row">
-                <i class="main-footer__social-item fab fa-facebook"></i>
-                <i class="main-footer__social-item fab fa-twitter-square"></i>
-                <i class="main-footer__social-item fab fa-google-plus-square"></i>
-                <i class="main-footer__social-item fas fa-share-alt-square"></i>
+                <a href="/info" alt="facebook"><i class="main-footer__social-item fab fa-facebook"></i></a>
+                <a href="/info" alt="twitter"><i class="main-footer__social-item fab fa-twitter-square"></i></a>
+                <a href="/info" alt="google+"><i class="main-footer__social-item fab fa-google-plus-square"></i></a>
+                <a href="/info" alt="share"><i class="main-footer__social-item fas fa-share-alt-square"></i></a>
             </div>
         </div>
     </footer>

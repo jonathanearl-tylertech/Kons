@@ -5,16 +5,18 @@
 
     &--padding {
         margin: 0 auto;
-        width: 80%;
-        padding: 0 5%;
         box-sizing: border-box;
         background-color: $white;
+        padding: 0 3rem;
+        @media (max-width: $medium-large) {
+            padding: 0 1rem;
+        }
         @media (max-width: $large) {
             width: 100%;
         }
 
         &-border {
-            padding: 5%;
+            padding: 3rem;
             border: 1px solid $grey;
         }
     }
@@ -68,6 +70,7 @@
     color: $blue;
     background-color: $white;
     padding: 0;
+    cursor: pointer;
 }
 
 .main-container {
@@ -107,6 +110,7 @@
 }
 
 .logo_name {
+    color: $black;
     text-transform: uppercase;
     margin-left: -1rem;
     @media (max-width: $small) {

@@ -44,37 +44,18 @@ module.exports = {
             template: './src/index.html',
             minify: {
                 html5                          : true,
-                collapseWhitespace             : true,
-                minifyCSS                      : true,
-                minifyJS                       : true,
+                collapseWhitespace             : false,
+                minifyCSS                      : false,
+                minifyJS                       : false,
                 minifyURLs                     : false,
-                removeAttributeQuotes          : true,
-                removeComments                 : true,
-                removeEmptyAttributes          : true,
-                removeOptionalTags             : true,
-                removeRedundantAttributes      : true,
-                removeScriptTypeAttributes     : true,
-                removeStyleLinkTypeAttributese : true,
-                useShortDoctype                : true
-            }
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/error.html',
-            filename: 'error.html',
-            minify: {
-                html5                          : true,
-                collapseWhitespace             : true,
-                minifyCSS                      : true,
-                minifyJS                       : true,
-                minifyURLs                     : false,
-                removeAttributeQuotes          : true,
-                removeComments                 : true,
-                removeEmptyAttributes          : true,
-                removeOptionalTags             : true,
-                removeRedundantAttributes      : true,
-                removeScriptTypeAttributes     : true,
-                removeStyleLinkTypeAttributese : true,
-                useShortDoctype                : true
+                removeAttributeQuotes          : false,
+                removeComments                 : false,
+                removeEmptyAttributes          : false,
+                removeOptionalTags             : false,
+                removeRedundantAttributes      : false,
+                removeScriptTypeAttributes     : false,
+                removeStyleLinkTypeAttributese : false,
+                useShortDoctype                : false
             }
         }),
         new CleanWebpackPlugin('dist'),

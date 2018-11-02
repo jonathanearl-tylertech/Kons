@@ -42,12 +42,10 @@
     }
 
     &__social-item {
-        margin-left: 1rem;
-        &:first-child {
-            margin-left: 0;
-        }
+        color: $yellow;
         @media (max-width: $small) {
             margin-bottom: 2rem;
         }
+        padding: 0 .25rem;
     }
 }
