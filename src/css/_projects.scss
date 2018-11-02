@@ -5,10 +5,11 @@
     &__button {
         align-self: center;
         margin-left: auto;
+        font-weight: bold;
     }
 
     &__display {
-        height: 50rem;
+        height: 40rem;
         overflow: hidden;
         margin: 0 auto;
         @media (max-width: $large) {
@@ -28,27 +29,43 @@
         }
         height: 100%;
         width:100%;
-
         object-fit: cover;
         overflow: hidden;
     }
 
+    &__info-container {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: transform .5s;
+        &:hover {
+            transform: translateY(-6.5rem)
+        }
+    }
+
     &__info {
+        background-color: $translucent-black;
+        width: 100%;
         position: absolute;
         left: 0;
-        bottom: 0;
-        padding-left: 3rem;
-        padding-bottom: 3rem;
+        bottom: -3.75rem;
+        padding: 1.25rem;
     }
 
     &__type {
         color: $grey;
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-weight: 300;
     }
 
     &__building-name {
         color: $white;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        &:hover {
+            color: $yellow;
+        }
     }
 
     &__col {

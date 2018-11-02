@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kons - World class construction</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/icon" href="/assets/icon/favicon16.ico"/>
 </head>
 <body>
     <nav class="main-nav">
-        <div class="main-nav__row container--padding row">
+        <div class="main-nav__row container container--padding row">
             <div class="main-nav__logo row">
-                <img class="logo" src="/assets/img/logo.svg" alt="logo"><span class="hidden--small">Kons</span>
+                <a href="/" alt="home"><img class="logo" src="/assets/img/logo.svg" alt="logo"></a>
+                <a href="/" alt="home"><span class="logo_name hidden--small">Kons</span></a>
             </div>
             <ul class="main-nav__list row">
                 <li class="main-nav__list-item"><a href="#about" class="main-nav__link main-nav__link--active">about</a></li>
@@ -23,7 +25,9 @@
                 Menu
                 <i class="main-nav__mobile-icon fas fa-caret-square-down"></i>
             </div>
-            <button class="main-nav__quote-button"><span class="hidden--small">get a<br></span>quote</button>
+            <a class="main-nav__quote-button" href="https://jonathanearl.io" alt="jonathan porfolio">
+                <button class="main-nav__quote-button"><span class="hidden--small">get a<br></span>quote</button>
+            </a>
         </div>
     </nav>
     <nav class="mobile-nav">
@@ -36,16 +40,15 @@
     </nav>
 
     <header class="main-header">
-        <div class="main-header__container container--padding col">
+        <div class="main-header__container container container--padding col">
             <p class="main-header__snippit">We're <span class='main-header__snippit--highlight'>Kons</span>, Construction and<br>Development</p>
             <h1 class="main-header__motto">Perfection is<br>always<br>under construction</h1>
         </div>
     </header>
 
     <main>
-        <span id="about"></span>
         <div class="main-container main-container--first container--padding">
-            <section class="intro">
+            <section id="about" class="intro">
                 <div class="intro__container  row">
                     <img src="/assets/img/main-header.jpg" alt="" class="intro__img">
                     <div class="intro__right-col col">
@@ -63,7 +66,7 @@
                             We have exacting HSE and sustanability standards and the health and safty of both our employees and the general public is given utmost priority.
                         </p>               
 
-                        <button class="intro__button button">Read More</button>
+                        <a href="https://jonathanearl.io" alt="about us" class="intro__button button">Read More</a>
                         
                         <hr class="intro__seperator seperator">
 
@@ -154,18 +157,20 @@
             <section class="projects">
                 <div class="projects__header row">
                     <h2 class="projects__title title">Projects That We<br>Completed</h2>
-                    <button class="projects__button button">view all projects</button>
+                    <a href="https://jonathanearl.io" alt="All Projects" class="projects__button button">view all projects</a>
                 </div>
             </section>
         </div>
-        <span id="works"></span>
-        <div class="projects__display row container">
+
+        <div id="works" class="projects__display row container">
             <div class="projects__col projects__col--left col">
                 <div class="projects__img-container">
                     <img src="/assets/img/project1.jpg" alt="" class="projects__img">
-                    <div class="projects__info">
-                        <div class="projects__type">Buildings</div>
-                        <div class="projects__building-name">Chateau Del Mar</div>
+                    <div class="projects__info-container">
+                        <div class="projects__info">
+                            <div class="projects__type">Buildings</div>
+                            <a href="https://jonathanearl.io" alt="Chateau Del Mar project details" class="projects__building-name">Chateau Del Mar</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,25 +178,31 @@
                 <div class="projects__row projects__row--top row">
                     <div class="projects__img-container">
                         <img src="/assets/img/project2.jpg" alt="" class="projects__img">
-                        <div class="projects__info">
-                            <div class="projects__type">Commericals</div>
-                            <div class="projects__building-name">Library of Washington</div>
+                        <div class="projects__info-container">
+                            <div class="projects__info">
+                                <div class="projects__type">Commericals</div>
+                                <div href="https://jonathanearl.io" alt="Library of Washington project details" class="projects__building-name">Library of Washington</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="projects__row projects__row--bottom row">
                     <div class="projects__img-container">
                         <img src="/assets/img/project3.jpg" alt="" class="projects__img">
-                        <div class="projects__info">
-                            <div class="projects__type">Buildings</div>
-                            <div class="projects__building-name">SAM</div>
+                        <div class="projects__info-container">
+                            <div class="projects__info">
+                                <div class="projects__type">Buildings</div>
+                                <a href="https://jonathanearl.io" class="projects__building-name" alt="SAM project details">SAM</a>
+                            </div>
                         </div>
                     </div>
                     <div class="projects__img-container">
                         <img src="/assets/img/project4.jpg" alt="" class="projects__img">
-                        <div class="projects__info">
-                            <div class="projects__type">Residentials</div>
-                            <div class="projects__building-name">Reif<span class="hidden--small"> Apartments</span></div>
+                        <div class="projects__info-container">
+                            <div class="projects__info">
+                                <div class="projects__type">Residentials</div>
+                                <a href="https://jonathanearl.io" class="projects__building-name" alt="Reif Apartment project details">Reif<span class="hidden--small"> Apt</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,7 +238,7 @@
                     </div>
                 </div>
                 <a href="#" class="review__link">see review here</a>
-                <img class="review__trust-logo" src="#" alt="trustpilot">
+                <img class="review__trust-logo" src="/assets/img/trustpilot.jpg" alt="trustpilot">
                 <div class="review__user-review">
                     Excellent Service,<br>beautiful work!<br>Until next time!<br> Thank you
                 </div>
@@ -238,8 +249,8 @@
         </section>
 
         <div class="seperator--vertical no-small"></div>
-        <span id="news"></span>
-        <section class="news col">
+
+        <section id="news" class="news col">
             <article class="news__main container--padding-border col">
                 <img src="/assets/img/news.jpg" alt="" class="news__img">
                 <div class="news__info row">
@@ -248,7 +259,7 @@
                     <div class="news__writer">Admin</div>
                 </div>
                 <h3 class="news__title">Discover the amazing inside deco a carte museum in slovakia</h3>
-                <button class="news__link button">full article ></button>
+                <a href="https://jonathanearl.io" alt="Deco inside a carte museum.. full article" class="news__link button">full article ></a>
             </article>
 
             <div class="news__secondary row">
@@ -259,7 +270,7 @@
                         <div class="news__writer">Paul Logan</div>
                     </div>
                     <h3 class="news__title">Top 10 architecture buildings unique in china</h3>
-                    <button class="news__link button">full article ></button>
+                    <a href="https://jonathanearl.io" alt="Top 10 architecture buildings in china full article" class="news__link button">full article ></a>
                 </article>
                 <article class="news__article container--padding-border col">
                     <div class="news__info row">
@@ -268,28 +279,30 @@
                         <div class="news__writer">Sam Smith</div>
                     </div>
                     <h3 class="news__title">Morroco shopping center by Kons co.</h3>
-                    <button class="news__link button">full article ></button>
+                    <a href="https://jonathanearl.io" alt="Morroco shopping center by Kons full article" class="news__link button">full article ></a>
                 </article>
             </div>
         </section>
     </div>
-    <span id="contact"></span>
     <section class="contact col">
         <div class="contact__message">Let's work together</div>
-        <div class="contact__phone">(+555) 042-1995</div>
+        <div id="contact" class="contact__phone">(+555) 042-1995</div>
         <div class="contact__address">1401 S 348th St M101, Federal Way, WA 98003</div>
         <div class="contact__email">info@kons.com</div>
     </section>
 
     <footer class="main-footer">
-        <div class="main-footer__container container--padding row">
-            <div class="main-footer__logo">Kons</div>
+        <div class="main-footer__container container container--padding row">
+            <div class="main-footer__logo row">
+                <img class="logo--footer" src="/assets/img/logo.svg" alt="logo">
+                <div class="logo_name">Kons</div>
+            </div>
             <div class="main-footer__copywrite">&copy;2018 Kons. All rights reserved</div>
             <div class="main-footer__social-list row">
-                <i class="main-footer__social-item fab fa-facebook"></i>
-                <i class="main-footer__social-item fab fa-twitter-square"></i>
-                <i class="main-footer__social-item fab fa-google-plus-square"></i>
-                <i class="main-footer__social-item fas fa-share-alt-square"></i>
+                <a href="https://jonathanearl.io" alt="facebook"><i class="main-footer__social-item fab fa-facebook"></i></a>
+                <a href="https://jonathanearl.io" alt="twitter"><i class="main-footer__social-item fab fa-twitter-square"></i></a>
+                <a href="https://jonathanearl.io" alt="google+"><i class="main-footer__social-item fab fa-google-plus-square"></i></a>
+                <a href="https://jonathanearl.io" alt="share"><i class="main-footer__social-item fas fa-share-alt-square"></i></a>
             </div>
         </div>
     </footer>

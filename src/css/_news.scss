@@ -30,13 +30,18 @@
 
     &__secondary {
         border-left: 4px solid $yellow;
+        flex-direction: column;
+
+        @media (min-width: $medium-large) {
+            flex-direction: row;
+        }
     }
 
     &__link {
         margin-top: auto;
     }
 
-    &__secondary {
-        flex-direction: column;
+    &__article {
+        border-left: none;
     }
 }

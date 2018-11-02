@@ -14,7 +14,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -43,7 +42,7 @@ table {
 	border-spacing: 0;
 }
 
-a:link, a:visited {
+a, a:link, a:visited {
     text-decoration: none;
-    cursor: pointer;
+	cursor: pointer;
 }
