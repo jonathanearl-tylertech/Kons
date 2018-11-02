@@ -15,3 +15,13 @@ let mainLinks = document.querySelectorAll('.main-nav__link')
 for(let i = 0; i < mobileLinks.length; i++) {
     mainLinks[i].onclick = selectLink
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
