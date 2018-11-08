@@ -48,7 +48,7 @@ yarn build
 ## Responsive Design
 The page was built from the reference design pdf and added media query break points as the design broke working from desktop view to mobile. This was done using CSS Flex box to adjust from row layout to column layout based on the media query of the width of the page. As the containers no longer had room to fit the content the containers widened and stacked vertically to ensure enough space.
 
-[Demo](KonsDemo.gif)
+![](KonsDemo.gif)
 
 ## Webpack Configuration
 Webpack is a bit of a bear to configure, in setting it up for both development and build I learned a bit about the use of plugins and the configuration of the webpack.config.js. I feel that it is very good for as a build tool, but would warn against using it for development! If you dont have it set up perfectly you will consistantly run into road blocks and will need to experiment with plugins and configs to get it to do what you want (mostly). 
